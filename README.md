@@ -62,6 +62,8 @@ This repository provides clear explanations and examples of the core mathematica
 ```
 Mathematics-for-Machine-Learning-and-Artificial-Intelligence/
 ├── images/          # Diagrams and visual aids
+│   ├── 1.jpg
+│   └── .gitkeep
 ├── README.md        # Project overview (this file)
 └── LICENSE.txt      # MIT License
 ```
@@ -76,7 +78,7 @@ No special installation is required to read the material in this repository. If 
 
 ```bash
 # Clone the repository
-git clone https://github.com/EimanTahir071/Mathematics-for-Machine-Learning-and-Artificial-Intelligence.git
+git clone https://github.com/<OWNER>/Mathematics-for-Machine-Learning-and-Artificial-Intelligence.git
 cd Mathematics-for-Machine-Learning-and-Artificial-Intelligence
 
 # (Optional) Create and activate a virtual environment

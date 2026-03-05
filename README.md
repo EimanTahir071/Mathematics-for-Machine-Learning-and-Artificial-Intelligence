@@ -78,8 +78,8 @@ No special installation is required to read the material in this repository. If 
 
 ```bash
 # Clone the repository
-git clone https://github.com/<OWNER>/Mathematics-for-Machine-Learning-and-Artificial-Intelligence.git
-cd Mathematics-for-Machine-Learning-and-Artificial-Intelligence
+git clone https://github.com/<OWNER>/<REPO>.git
+cd <REPO>
 
 # (Optional) Create and activate a virtual environment
 python -m venv venv

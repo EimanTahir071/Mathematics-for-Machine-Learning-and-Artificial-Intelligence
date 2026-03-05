@@ -4,6 +4,10 @@
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+<div align="center">
+  <img src="/images/4.gif" alt="description" width="40%">
+</div>
+
 ---
 
 ## 📚 Table of Contents
@@ -21,6 +25,9 @@
 
 This repository provides clear explanations and examples of the core mathematical disciplines required to understand and build ML/AI systems. Whether you are a beginner or looking to refresh your fundamentals, the material here covers the essential theory behind algorithms and models used in practice.
 
+<div >
+  <img src="/images/3.gif" alt="description" width="100%">
+</div>
 ---
 
 ## Topics Covered

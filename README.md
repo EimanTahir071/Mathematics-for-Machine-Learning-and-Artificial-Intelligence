@@ -69,13 +69,15 @@ This repository provides clear explanations and examples of the core mathematica
 
 ```
 Mathematics-for-Machine-Learning-and-Artificial-Intelligence/
-├── images/          # Diagrams and visual aids
+├── Linear Algebra Fundamentals/
+│   └── day1_samples.py   # Basic matrix operations using NumPy
+├── images/               # Diagrams and visual aids
 │   ├── 1.jpg
 │   ├── 3.gif
 │   ├── 4.gif
 │   └── .gitkeep
-├── README.md        # Project overview (this file)
-└── LICENSE.txt      # MIT License
+├── README.md             # Project overview (this file)
+└── LICENSE.txt           # MIT License
 ```
 
 > 📌 Notebooks, problem sets, and additional resources will be added progressively. Check back often!

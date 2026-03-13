@@ -3,7 +3,7 @@ Day 3 Exercise 3 – Numerical Differentiation and Higher-Order Derivatives.
 
 When an analytic derivative is unavailable, we can approximate it numerically.
 Higher-order derivatives (Hessian diagonal) provide curvature information used
-in second-order optimisers.
+in second-order optimizers.
 
 Covers:
   - Central-difference approximation of the first derivative

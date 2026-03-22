@@ -12,10 +12,9 @@ t_crit = stats.t.ppf(0.975, df=len(data) - 1)
 
 ci = (sample_mean - t_crit * (std_dev / (len(data) ** 0.5)),
       sample_mean + t_crit * (std_dev / (len(data) ** 0.5)))
-print("95% Confidence Interval:", ci) 
 
-
-
+if __name__ == "__main__":
+    print("95% Confidence Interval:", ci) 
 # from statistics import mode
 
 # data = [10, 20, 30, 40, 50]

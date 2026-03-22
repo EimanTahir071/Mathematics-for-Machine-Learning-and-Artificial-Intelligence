@@ -1,4 +1,11 @@
-from scipy.stats import ttest_ind
+# This example requires SciPy. Install it with: pip install scipy
+try:
+    from scipy.stats import ttest_ind
+except ModuleNotFoundError as e:
+    raise SystemExit(
+        "Error: this script requires the 'scipy' package. "
+        "Please install it with 'pip install scipy' and try again."
+    ) from e
 
 if __name__ == "__main__":
     # Sample Datasets

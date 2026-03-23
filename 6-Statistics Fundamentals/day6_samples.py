@@ -1,26 +1,12 @@
 import scipy.stats as stats
+from statistics import mode
 
 
-data = [10, 20, 30, 40, 50]
-mean = sum(data) / len(data)
-
-variance = sum((x - mean) ** 2 for x in data) / (len(data) - 1)
-std_dev = variance ** 0.5
-
-sample_mean = mean
-t_crit = stats.t.ppf(0.975, df=len(data) - 1)
-
-ci = (sample_mean - t_crit * (std_dev / (len(data) ** 0.5)),
-      sample_mean + t_crit * (std_dev / (len(data) ** 0.5)))
-
-if __name__ == "__main__":
 def descriptive_statistics_example():
     """
     Example function demonstrating calculation of mean, median, mode,
     variance, and standard deviation for a simple dataset.
     """
-    from statistics import mode
-
     data = [10, 20, 30, 40, 50]
     mean = sum(data) / len(data)
     print("Mean: ", mean)
@@ -39,3 +25,17 @@ def descriptive_statistics_example():
     print("Variance: ", variance)
     std_dev = variance ** 0.5
     print("Standard Deviation:", std_dev)
+
+    # Confidence interval
+    sample_mean = mean
+    std_dev_sample = (sum((x - mean) ** 2 for x in data) / (len(data) - 1)) ** 0.5
+    t_crit = stats.t.ppf(0.975, df=len(data) - 1)
+    ci = (
+        sample_mean - t_crit * (std_dev_sample / (len(data) ** 0.5)),
+        sample_mean + t_crit * (std_dev_sample / (len(data) ** 0.5)),
+    )
+    print("95% Confidence Interval:", ci)
+
+
+if __name__ == "__main__":
+    descriptive_statistics_example()

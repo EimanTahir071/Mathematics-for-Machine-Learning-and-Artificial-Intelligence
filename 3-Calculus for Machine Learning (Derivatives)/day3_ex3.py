@@ -17,7 +17,7 @@ theta = np.array([0.1, 0.1])
 learning_rate = 0.1
 iterations = 1000
 
-# Perform gradinet descent
+# Perform gradient descent
 optimized_theta = gradient_descent(X, y, theta, learning_rate, iterations)
 
 print("Optimized Parameters: ", optimized_theta)

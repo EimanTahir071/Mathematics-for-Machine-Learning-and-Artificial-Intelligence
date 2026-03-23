@@ -21,18 +21,17 @@ def descriptive_statistics_example():
 
     print("Mode: ", mode(data))
 
-    variance = sum((x - mean) ** 2 for x in data) / len(data)
+    variance = sum((x - mean) ** 2 for x in data) / (len(data) - 1)
     print("Variance: ", variance)
     std_dev = variance ** 0.5
     print("Standard Deviation:", std_dev)
 
     # Confidence interval
     sample_mean = mean
-    std_dev_sample = (sum((x - mean) ** 2 for x in data) / (len(data) - 1)) ** 0.5
     t_crit = stats.t.ppf(0.975, df=len(data) - 1)
     ci = (
-        sample_mean - t_crit * (std_dev_sample / (len(data) ** 0.5)),
-        sample_mean + t_crit * (std_dev_sample / (len(data) ** 0.5)),
+        sample_mean - t_crit * (std_dev / (len(data) ** 0.5)),
+        sample_mean + t_crit * (std_dev / (len(data) ** 0.5)),
     )
     print("95% Confidence Interval:", ci)
 
